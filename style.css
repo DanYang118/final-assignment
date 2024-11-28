@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Funnel+Sans:ital@0;1&family=Griffy&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Funnel+Sans:ital@0;1&family=Griffy&family=Pacifico&display=swap');* {
+    font-family: "Funnel Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(165, 213, 255);
+    padding: 20px;
+    width: 100%;
+}
+header img{
+    width: 200px; 
+    height: auto; 
+       padding: 10px;
+}
+h1{
+        font-size: 36px;
+        text-align: center;
+        font-family: "Caveat Brush", cursive;
+    }
+
+nav{
+    display: flex;
+    justify-content: right; 
+    align-items: end;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+nav a{ color: #d7b13e;  
+    text-align: center;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;      
+    justify-content: center;  
+    width: 100%;
+}
+main img{
+    width: 50%; 
+    height: auto; 
+}
+#textpart{
+      width:70%;
+      margin: 40px;
+}
+    
+h2{
+    font-size: 30px;
+    font-family: Roboto Blod;
+}
+p{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+    font-family: Roboto;
+}
+footer {
+    background-color: rgb(165, 213, 255);
+    color:black; 
+    text-align: center; 
+    padding: 25px;
+    font-size: small;
+    width: 100%;
+    margin-top: 10px;
+}
+@media screen and (max-width:800px){
+    h1{
+        font-size: 20px;
+        color: blue;
+    }
+    h2{
+        font-size: 16px;
+    }
+    header{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;   
+        gap:10px;
+    }
+    main img{
+        width:100%;
+        max-width: 800px;
+        height: auto;
+    }
+    #textpart{
+        width:90%
+    }
+}
