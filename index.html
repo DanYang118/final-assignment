@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-		<img src="images/fluffynewlogo.png" alt="Fluffy Purr logo">
+		<img src="images/logo-fluffy.png" alt="Fluffy Purr logo">
 		<h1>Always take care of our family members</h1>
         <nav>
             <a href="home"> Home </a>
@@ -17,10 +17,11 @@
             <a href="contact"> Contact </a>
         </nav>
 	  </header>
-	  <main>
-        <img src="images/lyingkitten.png" alt="cute cat lying">
+	  <main class="container">
+      <container id="homepage">
+        <img src="images/bluecat.png" alt="cat in blue background">
         
-        <article id="textpart">
+        <article class="textpart">
         <h2> Our Mission </h2>
         <p>
             Fluffy Purr provides specialized cat bathing services. 
@@ -33,10 +34,49 @@
             as well as care during your business trip or vacation.
         </p>
         </article>
+      </container>
+      <container id="servicepage">
+        <article class="textpart">
+        <h2> Service </h2>
+        <p>
+          As a cat's best friend, Fluffy Purr knows that cats are 
+          very clean and it's important for them to keep their fur 
+          fluffy and clean.
+        </p>
+        <p>
+          Fluffy Purr offers professional cat bathing services to 
+          ensure that every cat feels safe, pampered, and deeply
+          relaxed, so they'll be purring in comfort!
+        </p>
+      </article>
+        <img src="images/catbath.png" alt="cat bathing">
+        <img src="images/lyingkitten.png" alt="cute lying kitten">
+        <img src="images/catcare.png" alt="take care the cat">
+      </container>
+      <container id="contactpage">
+        <article class="textpart">
+        <h2> Contact Us </h2>
+        <p>We're here to help—feel free to reach out anytime!</p>
+      </article>
+        <img src="images/hugkitten.png" alt="little girl and cat">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+      </container>
       </main>
 
 	  <footer>
 		<small>copyright &copy;	2024 DAN YANG All Rights Reserved.</small>
 	</footer>
+
+  <link rel="javascript" href="javascript.js">
 </body>
 </html>
