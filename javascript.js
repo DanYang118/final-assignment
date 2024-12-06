@@ -1,28 +1,49 @@
-// Wait for the DOM to fully load
-//document.addEventListener('DOMContentLoaded', function () {
-    // Get references to all pages and navigation links
-  //  const pages = document.querySelectorAll('#homepage, #servicepage, #contactpage'); // Update selectors for new tags
- //   const navLinks = document.querySelectorAll('nav a');
-  
-    // Function to show the specified page and hide the others
- //   function showPage(pageId) {
- //     pages.forEach((page) => {
- //       page.style.display = page.id === pageId ? 'block' : 'none';
- //     });
- //   }
-  
-    // Default: Show the homepage on the first load
-//    showPage('homepage');
-  
-    // Add click event listeners to navigation links
- //   navLinks.forEach((link) => {
-  //    link.addEventListener('click', function (event) {
-//        event.preventDefault(); // Prevent default link behavior
-//        const targetPage = this.getAttribute('href'); // Get the page ID from the href
-//        showPage(targetPage); // Show the selected page
- //     });
-  //  });
-  //});
-   
-  
+// Function to reset button styles
+function resetButtonStyles() {
+  const links = document.querySelectorAll('nav a'); // Select all navigation links
+  links.forEach(link => {
+    link.classList.remove('active'); // Remove the active class
+  });
+}
+
+// Add event listeners for navigation links
+document.querySelector('nav a[href="home"]').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent default link behavior
+  console.log("Homepage link clicked");
+
+  // Reset styles and set active class
+  resetButtonStyles();
+  this.classList.add('active');
+
+  // Update body classes
+  document.body.className = ''; // Reset all body classes
+  document.body.classList.add('homepage');
+});
+
+document.querySelector('nav a[href="service"]').addEventListener('click', function (event) {
+  event.preventDefault();
+  console.log("Service page link clicked");
+
+  // Reset styles and set active class
+  resetButtonStyles();
+  this.classList.add('active');
+
+  // Update body classes
+  document.body.className = '';
+  document.body.classList.add('servicepage');
+});
+
+document.querySelector('nav a[href="contact"]').addEventListener('click', function (event) {
+  event.preventDefault();
+  console.log("Contact page link clicked");
+
+  // Reset styles and set active class
+  resetButtonStyles();
+  this.classList.add('active');
+
+  // Update body classes
+  document.body.className = '';
+  document.body.classList.add('contactpage');
+});
+
   
