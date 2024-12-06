@@ -12,14 +12,14 @@
 		<img src="images/logo-fluffy.png" alt="Fluffy Purr logo">
 		<h1>Always take care of our family members</h1>
         <nav>
-            <a href="home"> Home </a>
-            <a href="service"> Service </a>
-            <a href="contact"> Contact </a>
+          <a href="#" id="homepageLink">Home</a>
+          <a href="#" id="serviceLink">Service</a>
+          <a href="#" id="contactLink">Contact</a>
         </nav>
 	  </header>
 
 	  <main>
-      <section id="homepage">
+      <section id="homepage" class="content">
         <img src="images/bluecat.png" alt="cat in blue background">  
 
         <article class="textpart">
@@ -37,7 +37,7 @@
         </article>
       </section>
 
-      <section id="servicepage">
+      <section id="servicepage" class="content">
         <article class="textpart">
         <h2> Service </h2>
         <p>
@@ -55,22 +55,20 @@
         <img src="images/lyingkitten.png" alt="cute lying kitten">
       </section>
 
-      <section id="contactpage">
+      <section id="contactpage" class="content">
         <article class="textpart">
         <h2> Contact Us </h2>
         <p>We're here to help—feel free to reach out anytime!</p>
         </article>
         <img src="images/hugkitten.png" alt="little girl and cat">
-        <form>
+        <form id="contactform">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required> 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </form>
       </section>
 
