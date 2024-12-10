@@ -33,12 +33,13 @@ nav{
     align-items: end;
     gap: 10px;
     padding-right: 5%;
+    padding-top: 40px;
 }
 
 nav a{ color: #c49b20;  
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
 }
 nav a:hover {
     color: #ffcc00;
@@ -157,9 +158,14 @@ footer {
         margin: 0; 
     }
     header img{
-        width: 200px; 
+        width: 150px; 
         height: auto; 
         margin: 0; 
+    }
+    nav{
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
     }
    section img{
         max-width: 700px;
@@ -179,11 +185,3 @@ footer {
   .content.visible {
     display: flex;
   }
-
-  #confirmationMessage {
-    font-size: 18px;
-    font-weight: bold;
-    color: green;
-    margin-top: 20px;
-    text-align: center;
-}
